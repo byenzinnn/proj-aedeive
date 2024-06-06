@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../assets/css/nav.css";
-import imgLogo from "../assets/img/imgLogo-Deive.png"
+import imgLogo from "../assets/img/imgLogo-Deive.png";
 
 function Navbar() {
   const [active, setActive] = useState("navMenu");
@@ -23,22 +23,22 @@ function Navbar() {
       <ul className={active}>
         <li className="navItem">
           <a href="#" className="navLink">
-            HOME
+            Home
           </a>
         </li>
         <li className="navItem">
           <a href="#" className="navLink">
-            DOAÇÕES
+            Doações
           </a>
         </li>
         <li className="navItem">
           <a href="#" className="navLink">
-            TRANSPARÊNCIA
+            Transparência
           </a>
         </li>
         <li className="navItem">
           <a href="#" className="navLink">
-            NOTÍCIAS
+            Notícias
           </a>
         </li>
       </ul>
