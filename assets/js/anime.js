@@ -10,7 +10,7 @@ const animeStart = () => {
     anime({
         targets: '.main-title',
         opacity: [0, 1],
-        duration: 1500,
+        duration: 500,
         delay: 400,
         translateY: [50, 0],
         easing: 'linear',

@@ -24,26 +24,37 @@
   <body onload="animeStart()">
     <nav class="navbar" id="navbar">
       <div class="logo">
-          <img src="assets/img/img-logo.png" alt="Logo">
+        <img src="assets/img/img-logo.png" alt="Logo" />
       </div>
       <div class="nav-bg">
-          <ul class="nav-links" id="navLinks">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Doações</a></li>
-              <li><a href="#">Transparência</a></li>
-              <li><a href="#">Notícias</a></li>
-          </ul>
-          <div id="btn-navbar" onclick="toggleMenu()">
-              <img src="assets/img/icon-menu.svg" alt="Menu">
-          </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Doações</a></li>
+          <li><a href="#">Transparência</a></li>
+          <li><a href="#">Notícias</a></li>
+        </ul>
+        <div id="btn-navbar" onclick="toggleMenu()">
+          <img src="assets/img/icon-menu.svg" alt="Menu" draggable="false"/>
+        </div>
       </div>
-  </nav>
+    </nav>
     <header>
-      <div class="main-title">
-        <p>Associação Evangelística</p>
-        <p>Deive Leonardo</p>
+      <div class="video-container">
+        <div class="video-doc">
+          <video autoplay muted loop id="my-video">
+            <source src="assets/vids/VideoDocumentario.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="main-title" >
+          <p>Associação Evangelística</p>
+          <p>Deive Leonardo</p>
+        </div>
       </div>
+      
     </header>
+    <div class="teste">
+        
+      </div>
     <script src="assets/js/anime.js"></script>
     <script src="assets/js/scripts.js"></script>
   </body>
