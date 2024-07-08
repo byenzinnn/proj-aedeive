@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 60%;
+    max-width: 150px; /* Ajuste o tamanho máximo conforme necessário */
+}
+
+.nav-bg .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-bg .nav-links li {
+    margin: 0 15px;
+}
+
+.nav-bg .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-bg .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+#btn-navbar {
+    margin-top: 18px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .nav-bg .nav-links {
+        display: none;
+        position: fixed;
+        top: 0vh; /* Ajustado para evitar sobreposição com o botão */
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Ajustado para ocupar o restante da tela */
+        background-color: rgba(0, 0, 0, 0.5);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .nav-bg .nav-links.active {
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-bg .nav-links li {
+        margin: 20px 0;
+    }
+
+    #btn-navbar {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 20px; /* Posicionado no canto superior direito */
+        z-index: 1000; /* Acima do menu */
+    }
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    text-align: center;
+    color: aliceblue;
+}
+
+.main-title p:nth-child(1){
+    font-size: 36px;
+}
+
+.main-title p:nth-child(2){
+    font-size: 18px;
+}
