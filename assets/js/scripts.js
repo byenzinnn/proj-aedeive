@@ -9,14 +9,22 @@ function toggleMenu() {
     });
 }
 
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.transform = "translateY(0px)";
-  } else {
-    document.getElementById("navbar").style.transform = "translateY(-300px)";
-  }
-  prevScrollpos = currentScrollPos;
-}
+window.addEventListener('scroll', function() {
+  const cards = document.querySelectorAll('.equipe-title');
+
+  cards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (cardTop < windowHeight * 0.90 && !card.classList.contains('animated')) {
+      anime({
+        targets: card,
+        translateX: [-100, 0],
+        duration: 800,
+        easing: 'easeInOutBack',
+        opacity: [0, 1]
+      });
+      card.classList.add('animated');
+    }
+  });
+});

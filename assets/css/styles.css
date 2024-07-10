@@ -22,7 +22,7 @@ body {
     transition: all .8s ease-in-out;
 }
 
-.active {
+.active-link {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     padding: 10px 15px;
@@ -179,7 +179,9 @@ header {
     width: 100%;
     height: 360px;
     overflow: hidden;
-    /* Certifique-se de que a imagem não saia do container */
+}
+
+.img-animation {
     filter: brightness(0.5);
     transition: all .2s ease-in-out;
 }
@@ -220,11 +222,11 @@ header {
 }
 
 @media (max-width: 768px) {
-    .noticias-card{
-        width:  300px;
+    .noticias-card {
+        width: 300px;
         height: auto;
     }
-    
+
 }
 
 /* Conteúdo da seção Equipe */
@@ -271,7 +273,8 @@ header {
         background-image: url("../img/imgEquipe-escuro.jpg");
 
         /* Set a specific height */
-        min-height: 600px;
+        min-height: 500px;
+        max-height: 800px;
 
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
@@ -294,7 +297,6 @@ header {
     font-size: 30px;
     color: white;
     align-content: center;
-    margin-left: 8%;
 }
 
 .img-equipe img {
@@ -316,14 +318,14 @@ header {
 
     .equipe-text p {
         margin-inline: 36px;
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
 @media (max-width: 670px) {
 
     .equipe-title p {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .equipe-title {
@@ -332,11 +334,161 @@ header {
 
     .equipe-text p {
         margin-inline: 20px;
-        font-size: 16px;
+        margin-top: 24px;
+        font-size: 20px;
     }
 
     .equipe-text {
         margin-inline: 26px;
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .equipe-title p {
+        font-size: 50px;
+    }
+
+    .equipe-title {
+        margin-top: 18px;
+    }
+
+    .equipe-text p {
+        margin-inline: 16px;
+        margin-top: 24px;
+        font-size: 18px;
+    }
+
+    .equipe-text {
+        margin-inline: 26px;
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Seção vida devocional */
+
+.devocional-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.devocional-wrapper img {
+    width: 672px;
+    height: 610px;
+}
+
+.devocional-text {
+    width: 729px;
+    height: 700px;
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width: 1399px) {
+
+    .devocional-container {
+        /* The image used */
+        background-image: url("../img/img-vida-devocional-escuro.jpg");
+
+        /* Set a specific height */
+        min-height: 500px;
+        max-height: 800px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        scroll-behavior: smooth;
+    }
+
+    .devocional-wrapper img {
+        display: none;
+    }
+
+    .devocional-text {
+        margin-inline: 24px;
+        color: white;
+        font-size: 26px;
+        text-align: right;
+        align-items: center;
+
+    }
+}
+
+@media (max-width: 668px) {
+    .devocional-text {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1399px) {
+
+    .devocional-container {
+        min-height: 500px;
+        max-height: 900px;
+    }
+}
+
+/* Conteúdo Missão, Visão e Valores */
+
+.missao-visao-valores-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 14px;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.mvv-card {
+    width: 441px;
+    height: 654px;
+    background-color: rgb(255, 255, 255);
+}
+
+.mvv-card .img-card {
+    height: 70%;
+}
+
+.card-content{
+    width: 100%;
+    padding: 24px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+@media (max-width: 1350px) {
+
+    .missao-visao-valores-container {
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mvv-card {
+        width: 96%;
+        min-height: 32vh;
+        background-color: rgb(255, 255, 255);
+        margin-inline: 2%;
+    }
+
+    .mvv-card .img-card{
+        width: 100%;
+        vertical-align: baseline;
     }
 }
