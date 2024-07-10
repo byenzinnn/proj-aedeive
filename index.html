@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
       integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ=="
@@ -28,13 +29,13 @@
       </div>
       <div class="nav-bg">
         <ul class="nav-links" id="navLinks">
-          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Home</a></li>
           <li><a href="#">Doações</a></li>
           <li><a href="#">Transparência</a></li>
           <li><a href="#">Notícias</a></li>
         </ul>
         <div id="btn-navbar" onclick="toggleMenu()">
-          <img src="assets/img/icon-menu.svg" alt="Menu" draggable="false"/>
+          <img src="assets/img/icon-menu.svg" alt="Menu" draggable="false" />
         </div>
       </div>
     </nav>
@@ -45,16 +46,77 @@
             <source src="assets/vids/VideoDocumentario.mp4" type="video/mp4" />
           </video>
         </div>
-        <div class="main-title" >
+        <div class="main-title">
           <p>Associação Evangelística</p>
           <p>Deive Leonardo</p>
         </div>
       </div>
-      
     </header>
-    <div class="teste">
-        
+
+    <section class="noticias-container">
+      <div class="equipe-title tt-noticias">
+        <p>Ultimas notícias</p>
       </div>
+
+      <div class="noticias-wrapper">
+        <div class="noticias-card">
+          <div class="img-card">
+            <img src="assets/img/img-noticia-1.jpg" />
+          </div>
+          <div class="title-card">Lorem</div>
+          <div class="desc-card">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+            nesciunt ullam cumque culpa maxime.
+          </div>
+        </div>
+        <div class="noticias-card">
+          <div class="img-card">
+            <img src="assets/img/img-noticia-2.png" />
+          </div>
+            <div class="title-card">Lorem</div>
+            <div class="desc-card">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+              nesciunt ullam cumque culpa maxime.
+          </div>
+        </div>
+        <div class="noticias-card">
+          <div class="img-card">
+            <img src="assets/img/img-noticia-3.png" />
+          </div>
+            <div class="title-card">Lorem</div>
+            <div class="desc-card">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+              nesciunt ullam cumque culpa maxime.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="equipe-container">
+      <div class="equipe-title">
+        <p>QUEM SOMOS</p>
+      </div>
+      <div class="equipe-content">
+        <div class="equipe-text">
+          <p>
+            Somos a Associação Evangelística Deive Leonardo, distintas pessoas
+            de diferentes lugares vivenciando o maior dos propósitos:
+            compartilhar a mensagem de Jesus (Marcos 16.15). Constituída pela
+            visão de ser um espaço de aproximação e articulação de forças e
+            estratégias em prol da evangelização mundial, a Associação
+            Evangelística Deive Leonardo tem como missão proclamar a Palavra de
+            Deus, seu amor e o seu cuidado, a povos, línguas e nações. Certos de
+            que Deus pode fazer “muito mais do que tudo o que pedimos ou
+            pensamos” (Ef 3.20), acreditamos que, juntos, com Cristo,
+            alcançaremos gerações.
+          </p>
+        </div>
+        <div class="img-equipe">
+          <img src="assets/img/imgEquipe.png" draggable="false" />
+        </div>
+      </div>
+    </section>
+
     <script src="assets/js/anime.js"></script>
     <script src="assets/js/scripts.js"></script>
   </body>
